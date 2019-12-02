@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*
+CSS Document made by haryo bayu
+more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
+23 Oktober 2019
+*/
+
+@media only screen and (min-width: 1100px)  and (max-width: 1199px ) {
+.wrapping { width:100% !important;}
+.header-mobile { display:none !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+}
+@media only screen and (min-width: 1000px)  and (max-width: 1099px ) {
+.wrapping { width: 100% !important;}
+.header-mobile { display:none !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+}
+@media only screen and (min-width: 901px)  and (max-width: 999px ) {
+.wrapping { width: 100% !important;}
+.header-mobile { display:none !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+}
+
+@media only screen and (min-width: 850px)  and (max-width: 900px ) {
+.wrapping { width: 100% !important;}
+.header-mobile { display:block !important; position:fixed; top:0px;}
+.header-desktop { display:none !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+}
+
+@media only screen and (min-width: 769px)  and (max-width: 849px ) {
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%;  margin-left:0px;}
+.slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+}
+@media only screen and (min-width: 641px)  and (max-width: 768px ) {
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%; margin-left:0px;}
+.slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+}
+
+@media only screen and (min-width: 481px)  and (max-width: 640px ) {
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content { margin-top:80px;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%; margin-left:0px;}
+.slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+}
+
+@media only screen and (min-width: 421px)  and (max-width: 480px ) {
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content { margin-top:80px;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%; margin-left:0px;}
+.slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+}
+
+@media only screen and (min-width: 360px)  and (max-width: 420px ) {
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content { margin-top:60px;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%; margin-left:0px;}
+.slogan-name { font-size:20px; font-weight:700;line-height:30px; letter-spacing:-1px;}
+}
+
+@media only screen and (max-width: 359px ) { 
+.wrapping { width: 100% !important;}
+.header-desktop { display:none !important;}
+.header-mobile { display:block !important;}
+.list-lr { margin-left:10px !important; margin-right:10px !important;}
+.body-content { margin-top:50px;}
+.body-content .txt-ny{ width:100%; margin-bottom:10px;}
+.body-content .fm-ny { width:100%; margin-left:0px;}
+.slogan-name { font-size:17px; font-weight:700;line-height:28px; letter-spacing:-1px;}
+
+}
+
+
+
+

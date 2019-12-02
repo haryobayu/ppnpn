@@ -1,0 +1,472 @@
+/* cust0m scss by haryo bayu 28-11-2019 */
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #06F;
+
+  &:hover, &:focus {
+    color: #06F;
+  }
+}
+
+.arrow {
+  float: right;
+}
+
+.fa.arrow:before {
+  content: "\f104";
+}
+
+.active > a > .fa.arrow:before {
+  content: "\f107";
+}
+
+.nav-second-level li, .nav-third-level li {
+  border-bottom: none !important;
+}
+
+.nav-second-level li a {
+  padding-left: 37px;
+}
+
+.nav-third-level li a {
+  padding-left: 55px;
+}
+
+.sidebar-collapse {
+  background: none;
+
+  .nav {
+    background: none;
+    padding: 0;
+
+    > li > a {
+      background: #FFFFFF;
+      text-shadow: none;
+      color: #0000FF;
+    }
+
+    > li > a {
+      &:hover, &:focus {
+        background: #F3F3F3;
+        outline: 0;
+      }
+    }
+  }
+
+  > .nav > li {
+    > a {
+      padding: 15px 10px;
+    }
+
+    border-bottom: 1px solid rgba(240, 240, 240, 1) !important;
+  }
+}
+
+.nav-second-level > li:last-child > a:after {
+  height: 50%;
+}
+
+.nav-third-level > li {
+  &:last-child > a:after {
+    height: 50%;
+  }
+
+  > a {
+    &:after, &:before {
+      left: 40px;
+    }
+  }
+}
+
+.navbar-side {
+	border:none;
+	
+}
+.navbar-inverse {
+background-color: #FFF;
+border-color: #D3D3D3;
+
+}
+
+.navbar-default {
+  border: 0px solid #DDDDDD;
+
+  .navbar-toggle {
+    &:hover, &:focus {
+      background-color: #B40101;
+    }
+
+    border-color: #fff;
+
+    .icon-bar {
+      background-color: #FFF;
+    }
+  }
+}
+
+.nav > li > a > i {
+  margin-right: 10px;
+}
+
+.navbar-inverse {
+  .navbar-brand {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 900;
+
+    &:hover, &:focus {
+      color: #000000;
+      font-size: 25px;
+      font-weight: 900;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: #8B7BFF;
+
+    &:hover, &:focus {
+      background-color: #8B7BFF;
+    }
+  }
+}
+
+.adjust-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-toggle {
+  background-color: #8B7BFF;
+}
+
+.bg-color-blue {
+  background-color: #9A86EB;
+  color: #fff;
+}
+
+.no-boder {
+  border: 1px solid #f3f3f3;
+}
+
+.back-footer-blue {
+  background-color: #7479E6;
+  border-top: 0px solid #fff;
+}
+
+/*==============================================
+    BOOTSTRAP STYLE CHANGES     
+    =============================================*/
+	
+.nav-tabs > li > a {
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.panel-group .panel, .panel {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+
+.panel-heading {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.btn, .progress {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+
+/*==============================================
+    MEDIA QUERIES  / Responsive    
+    =============================================*/	
+	
+@media (min-width: 768px) {
+  #page-wrapper {
+    margin: 0 0 0 260px;
+    padding: 15px 30px;
+    min-height: 1200px;
+  }
+
+  .navbar-side {
+    z-index: 1;
+    position: absolute;
+    width: 260px;
+  }
+
+  .navbar {
+    border-radius: 0px;
+  }
+}
+
+/* -------------------------------- 
+
+Menu Bayu
+
+-------------------------------- */	
+
+.cd-accordion-menu {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: none;
+  padding-left: 0;
+  margin-left: 0;
+  background-color: #FFF;
+
+  ul {
+    /* by default hide all sub menus */
+    display: none;
+    padding-left: 0;
+    margin-left: 0;
+    -webkit-padding-start: 0px !important;
+    list-style-type: none;
+  }
+
+  li {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 10px;
+    margin-left: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    min-height: 32px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input[type=checkbox] {
+    /* hide native checkbox */
+    position: absolute;
+    opacity: 0;
+  }
+
+  label, a {
+    position: relative;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+}
+
+.no-touch .cd-accordion-menu {
+  label:hover, a:hover {
+    background: #FFF;
+  }
+}
+
+.cd-accordion-menu {
+  label {
+    &::before, &::after {
+      /* icons */
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  a::after {
+    /* icons */
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  label {
+    cursor: pointer;
+
+    &::before, &::after {
+      background-image: url("assets/img/cd-icons.svg");
+      background-repeat: no-repeat;
+      right: 0px;
+      color: #333;
+    }
+  }
+
+  a::after {
+    /* image icon */
+    right: 0px;
+
+    /*background: url("../images/cd-icons.svg") no-repeat -48px 0;*/
+  }
+
+  input[type=checkbox]:checked + label {
+    + ul, &:nth-of-type(n) + ul {
+      /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+      /* show children when item is checked */
+      display: block;
+    }
+  }
+
+  ul {
+    label, a {
+      padding-left: 20px;
+    }
+  }
+}
+
+.no-touch .cd-accordion-menu ul {
+  label:hover, a:hover {
+    background: #FFF;
+    color: #333;
+  }
+}
+
+.cd-accordion-menu {
+  > li {
+    &:last-of-type > {
+      label, a {
+        box-shadow: none;
+      }
+    }
+
+    > ul > li:last-of-type {
+      label, a {
+        box-shadow: none;
+      }
+    }
+  }
+
+  ul {
+    label {
+      &::before, &::after {
+        right: 0px;
+      }
+    }
+
+    a::after {
+      right: 0px;
+    }
+
+    ul {
+      label, a {
+        padding-left: 40px;
+        font-weight: normal;
+        color: #333;
+      }
+
+      label {
+        &::before, &::after {
+          right: 0px;
+        }
+      }
+
+      a::after {
+        right: 0px;
+      }
+
+      ul {
+        label, a {
+          padding-left: 20px;
+        }
+
+        label {
+          &::before {
+            right: 20px;
+          }
+
+          &::after {
+            right: 60px;
+          }
+        }
+
+        a::after {
+          right: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-accordion-menu {
+    label, a {
+      font-size: 14px;
+      color: #333;
+    }
+
+    label {
+      &::before, &::after {
+        right: 20px;
+      }
+    }
+
+    ul {
+      label, a {
+        padding-left: 20px;
+      }
+
+      label {
+        &::before, &::after {
+          right: 20px;
+        }
+      }
+
+      a::after {
+        right: 20px;
+      }
+
+      ul {
+        label, a {
+          padding-left: 40px;
+        }
+
+        label {
+          &::before, &::after {
+            right: 40px;
+          }
+        }
+
+        a::after {
+          right: 40px;
+        }
+
+        ul {
+          label, a {
+            padding-left: 60px;
+          }
+
+          label {
+            &::before, &::after {
+              right: 60px;
+            }
+          }
+
+          a::after {
+            right: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cd-accordion-menu.animated label::before {
+  /* this class is used if you're using jquery to animate the accordion */
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
