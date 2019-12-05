@@ -9,16 +9,22 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .wrapping { width:100% !important;}
 .header-mobile { display:none !important;}
 .list-lr { margin-left:10px !important; margin-right:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.row-off { margin-right:0; padding-left:10px;}
 }
 @media only screen and (min-width: 1000px)  and (max-width: 1099px ) {
 .wrapping { width: 100% !important;}
 .header-mobile { display:none !important;}
 .list-lr { margin-left:10px !important; margin-right:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.row-off { margin-right:0; padding-left:10px;}
 }
 @media only screen and (min-width: 901px)  and (max-width: 999px ) {
 .wrapping { width: 100% !important;}
 .header-mobile { display:none !important;}
 .list-lr { margin-left:10px !important; margin-right:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.row-off { margin-right:0; padding-left:10px;}
 }
 
 @media only screen and (min-width: 850px)  and (max-width: 900px ) {
@@ -26,6 +32,8 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .header-mobile { display:block !important; position:fixed; top:0px;}
 .header-desktop { display:none !important;}
 .list-lr { margin-left:10px !important; margin-right:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.row-off { margin-right:0; padding-left:10px;}
 }
 
 @media only screen and (min-width: 769px)  and (max-width: 849px ) {
@@ -36,6 +44,8 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%;  margin-left:0px;}
 .slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.row-off { margin-right:0; padding-left:10px;}
 }
 @media only screen and (min-width: 641px)  and (max-width: 768px ) {
 .wrapping { width: 100% !important;}
@@ -45,6 +55,9 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%; margin-left:0px;}
 .slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+.hmile { display:none;} .blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.cos-off { padding-right:0 !important; margin-right:10px; margin-left:10px;}
+.row-off { margin-right:0;}
 }
 
 @media only screen and (min-width: 481px)  and (max-width: 640px ) {
@@ -56,6 +69,13 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%; margin-left:0px;}
 .slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+.hmile { display:none;}.log-das { width:180px; height:auto !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.cos-off { padding-right:0 !important; margin-right:10px; margin-left:10px;}
+.row-off { margin-right:0;}
+.fr-fl .in-ps {border:none; width: calc(70% - 20px);}
+.fr-fl .sr-ad {width:15%;}.fr-fl .pasfad {margin-top:15px;}
+.fr-fl .fad { font-size:15px;}
 }
 
 @media only screen and (min-width: 421px)  and (max-width: 480px ) {
@@ -67,6 +87,13 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%; margin-left:0px;}
 .slogan-name { font-size:30px; font-weight:700; line-height:40px; letter-spacing:-2px;}
+.hmile { display:none;}.log-das { width:180px; height:auto !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.cos-off { padding-right:0 !important; margin-right:10px; margin-left:10px;}
+.row-off { margin-right:0;}
+.fr-fl .in-ps {border:none; width: calc(70% - 20px);}
+.fr-fl .sr-ad {width:15%;}.fr-fl .pasfad {margin-top:15px;}
+.fr-fl .fad { font-size:15px;}
 }
 
 @media only screen and (min-width: 360px)  and (max-width: 420px ) {
@@ -78,6 +105,14 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%; margin-left:0px;}
 .slogan-name { font-size:20px; font-weight:700;line-height:30px; letter-spacing:-1px;}
+.hmile { display:none;} .log-das { width:150px; height:auto !important; margin-top:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.cos-off { padding-right:0 !important; margin-right:10px; margin-left:10px;}
+.row-off { margin-right:0;}
+.blk-menu-top ul .kh-sch {background-color:#104372;}
+.fr-fl .in-ps {border:none; width: calc(70% - 20px);}
+.fr-fl .sr-ad {width:15%;}.fr-fl .pasfad {margin-top:15px;}
+.fr-fl .fad { font-size:15px;}
 }
 
 @media only screen and (max-width: 359px ) { 
@@ -89,7 +124,14 @@ more about me : www.haryobayu.web.id | haryobayu.info@gmail.com
 .body-content .txt-ny{ width:100%; margin-bottom:10px;}
 .body-content .fm-ny { width:100%; margin-left:0px;}
 .slogan-name { font-size:17px; font-weight:700;line-height:28px; letter-spacing:-1px;}
-
+.hmile { display:none;} .log-das { width:130px; height:auto !important; margin-top:10px !important;}
+.blk-menu-top ul li:nth-last-child(1) { margin-right:10px;}
+.cos-off { padding-right:0 !important; margin-right:10px; margin-left:10px;}
+.row-off { margin-right:0;}
+.blk-menu-top ul .kh-sch {background-color:#104372; padding:0px;}
+.fr-fl .in-ps {border:none; width: calc(70% - 20px);}
+.fr-fl .sr-ad {width:15%;}.fr-fl .pasfad {margin-top:15px;}
+.fr-fl .fad { font-size:15px;}
 }
 
 

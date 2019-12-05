@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIM PPNPN</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/css/style-by-v2.9.4.css" rel="stylesheet" />
+<link href="assets/css/login.css" rel="stylesheet" />
+<link href="assets/css/login-res.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="bg-all">
+<div class="header-eks">
+	<div class="wrapping">
+    	<img src="assets/img/logo-simppnpn-cil.png" class="log-das list-lr" />
+        <div class="blk-menu-top">
+        	<ul>
+            	<li class="kh-sch"><a href="search.html"><span class="hmile">Cari Pegawai</span><i class="fa fa-search mar-l-10"></i></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-home mar-r-10"></i><span class="hmile">Beranda</span></a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out mar-r-10"></i><span class="hmile">Sign Out</span></a></li>
+            </ul>
+        </div>
+      	<div class="clear-all"></div>  
+    </div>
+</div>
+
+<div class="wrapping case-content">
+	<div class="high-150"></div>
+	<div class="row row-off">
+    	<div class="col-md-6 cos-off">
+        	<div class="show-case">
+            	<div class="ctn">
+            		<div class="fs14 f-bold">Total Pekerja</div>
+                    <div class="box-stat">
+                    	<div class="ank">
+                        	<div class="expl">3.000.340</div>
+                            <div class="tcil">Jumlah Total</div>
+                        </div>
+                        <div class="jm">
+                        	<div class="ep"><span class="color-green fa fa-caret-up mar-r-10"> </span>01.25 %</div>
+                            <div class="tcil2">Bulan Berjalan</div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        <div class="col-md-6 cos-off">
+        	<div class="show-case ">
+            	<div class="ctn">
+            		<div class="fs14 f-bold">Pekerja Aktiv</div>
+                    <div class="box-stat">
+                    	<div class="ank">
+                        	<div class="expl">1.800.340</div>
+                            <div class="tcil">Jumlah Total</div>
+                        </div>
+                        <div class="jm">
+                        	<div class="ep"><span class="color-red fa fa-caret-down mar-r-10"> </span>00.25 %</div>
+                            <div class="tcil2">Bulan Berjalan</div>
+                        </div>
+                    </div>
+            	</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row row-off">
+    	<div class="col-md-8 cos-off">
+        	<div class="show-case2">
+            	<div class="ctn">
+            		<div class="fs14 f-bold">Grafik PPNPN Berdasarkan Unit</div>
+                    
+                    <canvas id="pie-chart" class="uk-pie"></canvas>
+                    
+                </div>
+            </div>
+            <div class="high-5"></div>
+            <div class="show-case2 ">
+            	<div class="ctn">
+                	<div class="fs14 f-bold">Grafik Pertumbuhan PPNPN Pertahun dan Pekerja Aktiv</div>
+            			
+                    <canvas id="pertumbuhan1" class="uk-btng"></canvas> 
+                    
+                      
+                </div>
+            </div>
+            <div class="high-5"></div>
+            <div class="show-case2 ">
+            	<div class="ctn">
+                	<div class="fs14 f-bold">Grafik PPNPN Berdasarkan Usia</div>
+            			
+                    <canvas id="pertumbuhan2" class="uk-btng"></canvas> 
+                    
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 cos-off">
+        
+        	<div class="show-case2">
+            	<div class="ctn">
+            		<div class="fs14 f-bold">Tabel Jumlah PPNPN Berdasarkan Unit</div>
+                    <div class="high-20"></div>
+                    <div class="table-responsive">
+                    	<table class="table table-striped">
+                        	<thead>
+                            	<tr>
+                                  <th>No</th>	
+                                  <th>Kode</th>
+                                  <th>Nama Unit</th>
+                                  <th>Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>1</td>
+                                    <td><div class="ktk-kode swn-navy"></div></td>
+                                    <td>Unit A</td>
+                                    <td>3.000.034</td>
+                                </tr>
+                                <tr>
+                                	<td>2</td>
+                                    <td><div class="ktk-kode swn-blue"></div></td>
+                                    <td>Unit B</td>
+                                    <td>2.040.454</td>
+                                </tr>
+                                <tr>
+                                	<td>3</td>
+                                    <td><div class="ktk-kode swn-aqua"></div></td>
+                                    <td>Unit C</td>
+                                    <td>1.523.718</td>
+                                </tr>
+                                <tr>
+                                	<td>4</td>
+                                    <td><div class="ktk-kode swn-teal"></div></td>
+                                    <td>Unit D</td>
+                                    <td>823.621</td>
+                                </tr>
+                                <tr>
+                                	<td>5</td>
+                                    <td><div class="ktk-kode swn-olive"></div></td>
+                                    <td>Unit E</td>
+                                    <td>723.293</td>
+                                </tr>
+                                 <tr>
+                                	<td>6</td>
+                                    <td><div class="ktk-kode swn-green"></div></td>
+                                    <td>Unit F</td>
+                                    <td>623.293</td>
+                                </tr>
+                                <tr>
+                                	<td>7</td>
+                                    <td><div class="ktk-kode swn-lime"></div></td>
+                                    <td>Unit G</td>
+                                    <td>573.219</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="high-5"></div>
+            <div class="show-case2 ">
+            	<div class="ctn">
+                	<div class="fs14 f-bold">Tabel PPNPN Berdasarkan Status</div>
+                    <div class="high-20"></div>
+                    <div class="table-responsive">
+                    	<table class="table table-striped">
+                        	<thead>
+                            	<tr>
+                                  <th>No</th>
+                                  <th>Status Pegawai</th>
+                                  <th>Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>1</td>
+                                    <td>Pegawai Aktiv</td>
+                                    <td>1.275.198</td>
+                                </tr>
+                                <tr>
+                                	<td>2</td>
+                                    <td>Pegawai Pensiun</td>
+                                    <td>3.034</td>
+                                </tr>
+                                <tr>
+                                	<td>3</td>
+                                    <td>Pegawai Resign</td>
+                                    <td>1.279</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                
+                </div>
+            </div>   
+            <div class="high-5"></div>
+            <div class="show-case2 ">
+            	<div class="ctn">
+                	<div class="fs14 f-bold">Tabel PPNPN Berdasarkan Gender</div>
+                    <div class="high-20"></div>
+                    <div class="table-responsive">
+                    	<table class="table table-striped">
+                        	<thead>
+                            	<tr>
+                                  <th>Gender / Jenis Kelamin</th>
+                                  <th>Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                    <td>Laki - Laki</td>
+                                    <td>1.275.198</td>
+                                </tr>
+                                <tr>
+                                    <td>Perempuan</td>
+                                    <td>3.234.356</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                
+                </div>
+            </div>   
+            <div class="high-5"></div>
+            <div class="show-case2 ">
+            	<div class="ctn">
+                	<div class="fs14 f-bold">Tabel PPNPN Berdasarkan Usia</div>
+                    <div class="high-20"></div>
+                    <div class="table-responsive">
+                    	<table class="table table-striped">
+                        	<thead>
+                            	<tr>
+                                  <th>No</th>
+                                  <th>Usia Pegawai</th>
+                                  <th>Jumlah</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td>1</td>
+                                    <td>20-30</td>
+                                    <td>3.275.198</td>
+                                </tr>
+                                <tr>
+                                	<td>2</td>
+                                    <td>31-40</td>
+                                    <td>2.233.034</td>
+                                </tr>
+                                <tr>
+                                	<td>3</td>
+                                    <td>41-50</td>
+                                    <td>1.279.345</td>
+                                </tr>
+                                <tr>
+                                	<td>4</td>
+                                    <td>51-60</td>
+                                    <td>679.345</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+                
+                </div>
+            </div>        
+        </div>
+        
+        
+        
+    </div>
+    
+    
+</div>
+<div class="high-100"></div> 
+<div class="clear-all"></div>
+<div class="foot-con">
+	<div class="wrapping">
+    	<div class="txtf">2019 © Dikdasmen Kemdikbud. All rights reserved</div>
+    </div>    
+</div>
+</div>
+</body>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/Chart.min.js"></script>
+<script src="assets/js/utils.js"></script>
+
+<script language="javascript">
+new Chart(document.getElementById("pie-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Unit-1", "Unit-2", "Unit-3", "Unit-4", "Unit-5"],
+      datasets: [{
+        label: "Jumlah (juta)",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+        data: [2478,5267,734,784,433]
+      }]
+    },
+    options: {
+	  legend: {
+		  position: 'bottom',
+          	labels: {
+            	fontColor: "#666",
+                boxWidth: 20,
+                padding: 20
+              }
+		  },	
+      title: {
+        display: true,
+        //text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+
+new Chart(document.getElementById("pertumbuhan1"), {
+    type: 'bar',
+    data: {
+      labels: ["2015","2016", "2017", "2018", "2019"],
+      datasets: [
+        {
+          label: "Jumlah Pekerja",
+          backgroundColor: "#3e95cd",
+          data: [2133,2221,2783,2478,2595]
+        }, {
+          label: "Pekerja Aktiv",
+          backgroundColor: "#8e5ea2",
+          data: [1808,1547,1675,1734,1600]
+        }
+      ]
+    },
+    options: {
+    	legend: {
+		  position: 'bottom',
+          	labels: {
+            	fontColor: "#666",
+                boxWidth: 20,
+                padding: 20
+              }
+		  }  
+    }
+});
+
+new Chart(document.getElementById("pertumbuhan2"), {
+    type: 'line',
+    data: {
+      labels: ["2015","2016", "2017", "2018", "2019"],
+      datasets: [
+        {
+          label: "20-30",
+          borderColor: "#3e95cd",
+          data: [2133,2221,2783,2478,2595],
+		  fill: false
+        }, {
+          label: "31-40",
+          borderColor: "#8e5ea2",
+          data: [2808,2547,2675,2734,2600],
+		  fill: false
+        },
+		 {
+          label: "41-50",
+          borderColor: "#FFDC00",
+          data: [2508,2455,1975,2134,2650],
+		  fill: false
+        },
+		{
+          label: "51-60",
+          borderColor: "#FE9301",
+          data: [2208,2355,2275,2534,2450],
+		  fill: false
+        }
+      ]
+    },
+    options: {
+    	legend: {
+		  position: 'bottom',
+          	labels: {
+            	fontColor: "#666",
+                boxWidth: 20,
+                padding: 20
+              }
+		  }  
+    }
+});
+</script>
+</html>
