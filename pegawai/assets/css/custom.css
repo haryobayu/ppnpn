@@ -115,7 +115,10 @@ color:#0000FF;
 	
 }
 .navbar-inverse {
-background-color: #FFF;
+/* background-color: background: rgb(246,75,7);
+background: linear-gradient(0deg, rgba(246,75,7,1) 0%, rgba(253,187,45,1) 100%);
+*/
+background-color:#FC3;
 border-color: #D3D3D3;
 
 }
@@ -243,9 +246,9 @@ border-radius: 0px;
 .blk-stat { display:flex; border-bottom:1px solid #eee; padding:10px ;}
 .blk-stat .nm { width: calc(75% - 10px) !important; margin-right:10px; text-align:left;}
 .blk-stat .st { width:25%; margin-right:10px; text-align:center;}
-.foot-con { background-color:#FFF; border-top:1px solid #f0f0f0; height:50px; width:100%; 
+.foot-con { background-color:#40403e; border-top:1px solid #f0f0f0; height:50px; width:100%; 
 position:fixed; bottom:0; padding:10px;}
-.foot-con .txtf { font-size:13px; margin-top:4px;}
+.foot-con .txtf { font-size:13px; margin-top:4px; color:#FFF;}
 .bor-b-ddd { border-bottom:1px solid #f0f0f0}
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus 

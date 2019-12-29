@@ -85,17 +85,7 @@
               <div class="tab-content">
                 <div id="lihatdata" class="tab-pane fade in active">
                   <div class="row">
-                  	<div class="col-md-4">
-                    	<div class="alert alert-info ">
-                            <h3>Data dokumen yang harus diunggah <br/> antara lain :</h3>
-                            <div class="high-15"></div>
-                            1. KTP <br/>
-                            2. Ijasah SD - Terakhir<br/>
-                            3. Akta Lahir<br/>
-                            4. Buku Nikah<br/>
-                        </div>
-                    </div>
-                  	<div class="col-md-8">
+                  	<div class="col-md-12">
                         <div class="table-responsive mar">
                         <table class="table table-striped">
                             <thead>
@@ -134,7 +124,7 @@
                                     2
                                     </td>
                                     <td>
-                                    Ijasah SD
+                                    Ijasah
                                     </td>
                                     <td class="txtcenter">
                                     <a  href="#" data-toggle="modal" data-target="#ModalLihat"><i class="fa fa-desktop"></i></a>
@@ -151,7 +141,7 @@
                                     3
                                     </td>
                                     <td>
-                                    Ijasah SMP
+                                    Foto Profil
                                     </td>
                                     <td class="txtcenter">
                                     <a  href="#" data-toggle="modal" data-target="#ModalLihat"><i class="fa fa-desktop"></i></a>
@@ -168,7 +158,7 @@
                                     4
                                     </td>
                                     <td>
-                                    Ijasah SMA
+                                    BPJS
                                     </td>
                                    <td class="txtcenter">
                                     <a  href="#" data-toggle="modal" data-target="#ModalLihat"><i class="fa fa-desktop"></i></a>
@@ -189,35 +179,322 @@
                   
                 </div>
                 <div id="editdata" class="tab-pane fade">
-                  <form>
-                  	<div class="row">
-                    	<div class="col-md-12">
-                            <div class="form-group">
-                                <label for="nama-dokumen">Nama Dokumen</label>
-                                <input type="text" class="form-control" id="nama-dokumen" placeholder="Nama Dokumen">
-                            </div>    
+                	
+                   <!-- acc -->
+                    <div class="panel-group" id="accordion">
+                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#foto-acc">Foto Pegawai</a>
+                                </h4>
+                            </div>
+                            <div id="foto-acc" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-foto-profil-name" class="form-control" id="doku-foto-profil" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>
+                                </div>
+                            </div>
                         </div>
-                       
-                  	</div>
-                   
-                   
-                    <div class="f-bold">Unggah Dokumen</div>
-                    <div class="row">
-                  		<div class="col-md-12">
-                        	<div class="form-group">
-                            	<input type="file" name="files[]" class="form-control" id="js-upload-files" multiple>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#ktp-acc">Foto KTP</a>
+                                </h4>
+                            </div>
+                            <div id="ktp-acc" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-foto-ktp-name" class="form-control" id="doku-foto-ktp" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#aktalahir-acc" class="collapsed">Akta Lahir</a>
+                                </h4>
+                            </div>
+                            <div id="aktalahir-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-akta-lahir-name" class="form-control" id="doku-akta-lahir" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#kk-acc" class="collapsed">Kartu Keluarga</a>
+                                </h4>
+                            </div>
+                            <div id="kk-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-kk-name" class="form-control" id="doku-kk" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#bukunikah-acc" class="collapsed">Buku Nikah</a>
+                                </h4>
+                            </div>
+                            <div id="bukunikah-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-bukunikah-name" class="form-control" id="doku-bukunikah" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#ijasah-acc" class="collapsed">Ijasah - SD,SMP,SMA,D3,S1,S2,S3</a>
+                                </h4>
+                            </div>
+                            <div id="ijasah-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-ijasah-name" class="form-control" id="doku-ijasah" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>     
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#ijasahkursus-acc" class="collapsed">Ijasah Kursus /Diklat</a>
+                                </h4>
+                            </div>
+                            <div id="ijasahkursus-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                	<form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-ijasah-name" class="form-control" id="doku-ijasah" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#skppnpn-acc" class="collapsed">SK PPNPN</a>
+                                </h4>
+                            </div>
+                            <div id="skppnpn-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                     <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-skppnpn-name" class="form-control" id="doku-skppnpn" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#bpjs-acc" class="collapsed">Kartu BPJS - Suami,Istri, Anak</a>
+                                </h4>
+                            </div>
+                            <div id="bpjs-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                     <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-bpjs-name" class="form-control" id="doku-bpjs" multiple />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#npwp-acc" class="collapsed">NPWP</a>
+                                </h4>
+                            </div>
+                            <div id="npwp-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                     <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-npwp-name" class="form-control" id="doku-npwp" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title fs14">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#tabungan-acc" class="collapsed">Buku Tabungan</a>
+                                </h4>
+                            </div>
+                            <div id="tabungan-acc" class="panel-collapse collapse">
+                            	<div class="panel-body">
+                                     <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="file" name="doku-tabungan-name" class="form-control" id="doku-tabungan" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
+                                            </div>
+                                         </div> 
+                                  	</form>    
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                    	<div class="col-md-6">
-                            <button class="btn btn-primary btn-block pad-lr-0 mar-b-10">Simpan</button>
-                        </div>
-                        <div class="col-md-6">
-                            <a class="btn btn-success btn-block pad-lr-0 color-white mar-b-10">Lihat data</a>
-                        </div>
-                     </div> 
-                  </form>
+                  	<!-- acca --> 
+                
+                  
                   
                 </div>
               </div>

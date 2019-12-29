@@ -66,7 +66,7 @@ a.link-blue-ocean { color: #02afda !important;}a.link-blue-ocean:hover{ color: #
 line-height:55px; font-family:"Arial Black", Gadget, sans-serif; letter-spacing:-4px;}
 .header {position:fixed; top:0; z-index:99; width:100%; border-bottom:1px solid #f0f0f0; background-color:#FFF;}
 .header-eks {position:fixed; top:0; z-index:99; width:100%; border-bottom:1px solid #f0f0f0; background-color:#104372;}
-.bg-all {width:100% !important; background-color:#e9ebee;}
+.bg-all {width:100% !important; background-color:#e9ebee; height:100% !important; position:fixed;}
 .case-content { min-height:800px;}
 .body-content { margin-top:170px;}
 .body-content .txt-ny{ width:65%; float:left;}
@@ -98,11 +98,11 @@ margin-bottom: 20px; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,.1); -webkit-
 .palette-Purple {background-color: #9575cd; color:#FFF;}
 .palette-Indigo {background-color: #1a237e; color:#FFF;}
 .palette-Orange {background-color: #FE9301; color:#FFF;}
-.box-stat { display:flex; padding-bottom:10px; border-bottom:1px solid #f0f0f0;}
+.box-stat { display:flex; padding-bottom:8px; border-bottom:1px solid #f0f0f0;}
 .box-stat .ank { width:50%; text-align:left;}
-.box-stat .ank .tcil { font-size:14px; margin-top:-10px;}
+.box-stat .ank .tcil { font-size:14px; margin-top:-10px; letter-spacing:normal;}
 .box-stat .ank .expl { font-size:40px; font-family: Tahoma, Geneva, sans-serif; 
-color:#17c7df; letter-spacing:-2px; margin-top:15px;}
+color:#666; letter-spacing:-2px; margin-top:15px;}
 .box-stat .jm { width:50%; text-align:right;}
 .box-stat .jm .ep {font-family: Tahoma, Geneva, sans-serif; 
 letter-spacing:-2px; margin-top:15px;font-size:40px; color:#17c7df;}

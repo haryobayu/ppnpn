@@ -76,7 +76,8 @@ a.link-blue-ocean { color: #02afda !important;}a.link-blue-ocean:hover{ color: #
 .list-lr { margin-left:0px; margin-right:0px;}
 .slogan-name { font-size:45px; font-weight:700; color:#1A629D; 
 line-height:55px; font-family:"Arial Black", Gadget, sans-serif; letter-spacing:-4px;}
-.header {position:fixed; top:0; z-index:99; width:100%; border-bottom:1px solid #f0f0f0; background-color:#FFF;}
+.header {position:fixed; top:0; z-index:99; width:100%; border-bottom:1px solid #FC0;background: rgb(246,75,7);
+background: linear-gradient(0deg, rgba(246,75,7,1) 0%, rgba(253,187,45,1) 100%);}
 .body-content { margin-top:170px;}
 .body-content .txt-ny{ width:65%; float:left;}
 .body-content .fm-ny { width: calc(35% - 10px); float:left; margin-left:10px; 
